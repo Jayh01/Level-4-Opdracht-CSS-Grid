@@ -1,0 +1,102 @@
+.body-container{
+    height: auto;
+    padding: 3px;
+    border: 1px solid black;
+    display: grid;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 3px;
+   
+    
+    
+}
+.header{
+    border: 1px solid black;
+    background-color: rgb(91, 165, 42);
+    grid-column:1/-1;
+}
+.site-main{
+    border: 1px solid black;
+    background-color: coral;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column:1/-1 ;
+}
+.Widget-Erea{
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    grid-row:6/8 ;
+    grid-column: 1/-1;
+}
+.site-footer{
+    border: 1px solid black;
+    background-color: darkgray;
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/*Begin desktop*/
+@media (min-width: 720px){
+    .header{
+        border: 1px solid black;
+        background-color: rgb(91, 165, 42);
+        grid-column:1;
+        grid-row: 1/9;
+    }
+    .site-main{
+        border: 1px solid black;
+        background-color: coral;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        grid-column:2/-1 ;
+    }
+    .Widget-Erea{
+        border: 1px solid black;
+        background-color: cornflowerblue;
+        grid-row:6/8 ;
+        grid-column: 2/-1;
+    }
+    .site-footer{
+        border: 1px solid black;
+        background-color: darkgray;
+        grid-row-start: 8;
+        grid-column-start: 2;
+        grid-column-end: -1;
+    }
+
+}
+
+/*Begin grote scherm*/
+@media (min-width: 1024px) {
+    .header{
+        border: 1px solid black;
+        background-color: rgb(91, 165, 42);
+        grid-column:1;
+        grid-row: 1/9;
+    }
+    .site-main{
+        border: 1px solid black;
+        background-color: coral;
+        grid-row-start: 1;
+        grid-row-end: 8;
+        grid-column:2/5 ;
+    }
+    .Widget-Erea{
+        border: 1px solid black;
+        background-color: cornflowerblue;
+        grid-row:1/9 ;
+        grid-column:5;
+    }
+    .site-footer{
+        border: 1px solid black;
+        background-color: darkgray;
+        grid-row-start: 8;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+}
+
